@@ -1,0 +1,19 @@
+package com.example.platformer.GOSpec;
+
+import android.graphics.PointF;
+
+public class BackgroundMountainSpec extends GameObjectSpec {
+
+    // This is all the specifications for the mountain background
+    private static final String tag = "Background";
+    private static final String bitmapName = "mountain";
+    private static final int frameOfAnimation = 1;
+    private static final float speed = 3f;
+    private static final PointF size = new PointF(100, 70f);
+    private static final String[] components =
+            new String[]{"BackgroundGraphicsComponent", "BackgroundUpdateComponent"};
+
+    public BackgroundMountainSpec(){
+        super(tag, bitmapName, speed, size, components, frameOfAnimation);
+    }
+}
